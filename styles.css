@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+/* header */
+
+.header-left img{
+    
+    object-fit: contain;
+    height: 40px;
+    margin-left: 7px;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(247, 249, 250);
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left span{
+    padding: 11px;
+    cursor: pointer;
+}
+
+
+.header-center{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: rgb(211, 232, 243);
+    padding: 5px;
+    border-radius: 30px;
+}
+.header-center input{
+    border: none;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 30px;
+    font-size: medium;
+    background-color: transparent;
+}
+.header-center span{
+    padding: 5px;
+}
+
+.header-right{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+.header-right span {
+    cursor: pointer;
+}
+
+.sidebar{
+    flex: 0.3;
+    max-width: 250px;
+    height: 100vh;
+    padding: 10px;
+    background-color: rgb(247, 249, 250);
+
+}
+.compose{
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(168, 226, 255);
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.50);
+
+}
+.compose:hover{
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.compose span {
+    margin-left: 5px;
+}
+
+.sidebarOptions{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    
+
+}
+
+.sidebarOptions span{
+    padding: 5px;
+}
+
+.sidebarOptions h4{
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidebarOptions:hover,
+.sidebarOptions:hover h4,
+.sidebarOptions:hover span,
+.sidebar-active,
+.sidebar-active h4,
+.sidebar-active span {
+    background-color: rgb(211, 232, 243);
+    color: black;
+    font-weight: 800;
+
+}
+.sidebar-footer{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-body {
+    display: flex;
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.emailList{
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.settings{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+}
+
+.settings-left,.settings-right{
+    display: flex;
+    align-items: center;
+
+}
+.settings-left span, .settings-right span{
+    margin: 10px;
+    cursor: pointer;
+}
+.settings-right span p{
+    font-size: small;
+    color: grey;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px ;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+
+}
+.sections {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+.sections-seleted {
+    border-width: 3px;
+    color: blue;
+    border-bottom:  3px solid blue;
+
+}
+.sections-seleted span svg {
+    color: blue;
+}
+
+.section:hover {
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+
+.section h4 {
+    font-size: 14px;
+    margin-left: 15px;
+
+}
+
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options span svg,input {
+    margin: 5px;
+
+}
+
+.email-list {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+
+.email-list:hover {
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
+}
+.message{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13px;
+}
+
+.message h4 {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title {
+    font-size: 13px;
+    flex: 0.3;
+}
+
+.time {
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.message h4 span {
+    font-weight: 400;
+    color: gray;
+}
+
